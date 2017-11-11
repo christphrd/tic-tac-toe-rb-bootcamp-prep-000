@@ -127,7 +127,7 @@ def play(board)
     turn(board)
     if won?(board) != false
       winner = winner(board)
-      win_message = puts "Congraulations #{winner}"
+      win_message = puts "Congraulations #{winner}!"
       return win_message
     end
     if draw?(board) == true
