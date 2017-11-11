@@ -95,7 +95,8 @@ def full?(board)
 end
 
 def draw?(board)
-  win? = won?(board)
+  win_or_not = won?(board)
+  full_or_not = full?(board)
   if won?(board) == false && full?(board) == true
     return true
   elsif won?(board) == false && full?(board) == false
