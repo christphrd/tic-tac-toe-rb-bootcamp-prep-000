@@ -111,3 +111,13 @@ def over?(board)
     return true
   end
 end
+
+def winner(board)
+  if won?(board) != false
+    win_move = won?(board)
+    random_position = win_move[0]
+    return board[random_position]
+  else
+    return nil
+  end
+end
