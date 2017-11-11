@@ -131,7 +131,8 @@ def play(board)
       return win_message
     end
     if draw?(board) == true
-      puts "Cat's Game!"
+      tie_message = puts "Cat's Game!"
+      return tie_message
     end
   end
 end
