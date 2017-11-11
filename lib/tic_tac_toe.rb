@@ -126,9 +126,7 @@ def play(board)
   until over?(board) == true
     turn(board)
     if won?(board) != false
-      winner = winner(board)
-      win_message = puts "Congraulations #{winner}!"
-      return win_message
+      puts "Congraulations #{winner(board)}!"
     end
     if draw?(board) == true
       puts "Cat's Game!"
