@@ -127,5 +127,6 @@ def play(board)
     turn(board)
     if won?(board) != false
       winner = winner(board)
+    if draw?(board)
   end
 end
